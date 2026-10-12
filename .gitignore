@@ -1,0 +1,17 @@
+# Raw data (large, regeneratable via README.md "Rebuilding from scratch")
+raw/
+
+# Generated training data (regeneratable; vulntriage_test.csv is kept since
+# the demos read it directly at runtime)
+vulntriage_train.csv
+
+# Demo answer key -- keep locally for rehearsal, never commit
+sample_backlog_ANSWER_KEY.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+.vscode/

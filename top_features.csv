@@ -1,0 +1,41 @@
+term,weight,direction
+apache,6.177710758823757,raises risk
+unauthenticated,6.107591758153106,raises risk
+report issue,5.581456071952869,raises risk
+remote code,5.377413105762399,raises risk
+ios,5.339528820097937,raises risk
+2013,5.249857903719122,raises risk
+exim,5.1739176713673025,raises risk
+netgear,5.159219367892833,raises risk
+roundcube,5.14872757828734,raises risk
+adobe,5.123268845096439,raises risk
+kernel,5.089713531445279,raises risk
+struts,4.594728498403229,raises risk
+citrix,4.557948048371198,raises risk
+october,4.52497058623581,raises risk
+sma100,4.454160092971522,raises risk
+august,4.4022415946841225,raises risk
+flash player,4.319266656415205,raises risk
+demonstrated,4.287898686443457,raises risk
+allows unauthenticated,4.23275445430513,raises risk
+fortios,4.2260871264232565,raises risk
+adobe reader,4.205945418788766,raises risk
+code,4.1759352786601855,raises risk
+qts,4.159156398317905,raises risk
+cisco ios,4.145113946035041,raises risk
+remote command,4.108965984053679,raises risk
+xss,-4.059241459037613,lowers risk
+denial,-3.614411873509138,lowers risk
+denial service,-3.5648243142234626,lowers risk
+cross,-3.502554439961343,lowers risk
+cve 2014,-3.1883021131171856,lowers risk
+file,-3.1861062938448947,lowers risk
+allows attacker,-3.1079079384999035,lowers risk
+sql commands,-3.0490220776133543,lowers risk
+csrf,-3.047941993777935,lowers risk
+android,-3.021205084871531,lowers risk
+id,-2.9086146884217614,lowers risk
+cross site,-2.878100672063356,lowers risk
+attackers,-2.8459847589591467,lowers risk
+microsoft edge,-2.7723362152226216,lowers risk
+crash,-2.7614099765945044,lowers risk
