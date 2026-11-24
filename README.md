@@ -17,21 +17,26 @@ CVEs a year and can't patch them all -- this model predicts exploitation
 likelihood directly from the vulnerability description, using CISA's KEV
 catalog as ground truth.
 
+## Architecture
+
+![VulnTriage System Architecture](architecture.png)
+
 ## Project structure
 
-```
+```text
 01_build_dataset.py        Parses the CVE corpus, labels with KEV, removes leakage, splits by time
 02_train_and_evaluate.py   Trains TF-IDF+LogReg / Random Forest, benchmarks against CVSS
 03_cli_demo.py             Terminal demo
+04_generate_visuals.py     Generates evaluation plots and class distribution figures
 05_triage_dashboard.py     Single + batch (CSV backlog) Flask dashboard
 06_live_demo.py            Fetches a real CVE from the NVD API and scores it live
-vulntriage_lib.py          Shared scoring/explainability logic
+vulntriage_lib.py          Shared scoring and explainability logic
 deploy/                    Dockerized app, ready for Hugging Face Spaces
 ```
 
 `vulntriage_model.pkl`, `vulntriage_test.csv`, `dataset_report.md`,
-`model_report.md`, and `top_features.csv` are pre-built and included, so the
-demos run immediately without retraining.
+`model_report.md`, `top_features.csv`, and `architecture.png` are pre-built and
+included, so the demos run immediately without retraining.
 
 ## Setup
 
@@ -42,8 +47,8 @@ pip install flask scikit-learn pandas numpy
 ## Run a demo
 
 ```bash
-python 05_triage_dashboard.py       # http://127.0.0.1:5000 -- single CVE + batch backlog ranking
-python 03_cli_demo.py               # terminal version, no browser needed
+python 05_triage_dashboard.py          # http://127.0.0.1:5000 -- single CVE + batch backlog ranking
+python 03_cli_demo.py                  # terminal version, no browser needed
 python 06_live_demo.py CVE-2024-3400   # fetch a real CVE from NVD and score it live
 ```
 
